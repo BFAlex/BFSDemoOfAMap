@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BFSAppAssistant.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[BFSAppAssistant sharedAssistant] registerAMap];
+    
     return YES;
 }
 

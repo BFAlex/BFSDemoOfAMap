@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0BD2595266F72B58621050 /* libPods-BFSDemoOfAMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BF576EF3B73ABEE829BE9B /* libPods-BFSDemoOfAMap.a */; };
 		E081A60B21EA4DEF0000A475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E081A60A21EA4DEF0000A475 /* main.m */; };
 		E081A60E21EA4DEF0000A475 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E081A60D21EA4DEF0000A475 /* AppDelegate.m */; };
 		E081A61121EA4DEF0000A475 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E081A61021EA4DEF0000A475 /* ViewController.m */; };
 		E081A61421EA4DEF0000A475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E081A61221EA4DEF0000A475 /* Main.storyboard */; };
 		E081A61621EA4DEF0000A475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E081A61521EA4DEF0000A475 /* Assets.xcassets */; };
 		E081A61921EA4DEF0000A475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E081A61721EA4DEF0000A475 /* LaunchScreen.storyboard */; };
+		E085E85A21EAE2780076B332 /* BFSAppAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = E085E85921EAE2780076B332 /* BFSAppAssistant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39335D0742171FA2224FBB7E /* Pods-BFSDemoOfAMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFSDemoOfAMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BFSDemoOfAMap/Pods-BFSDemoOfAMap.debug.xcconfig"; sourceTree = "<group>"; };
+		B9BF576EF3B73ABEE829BE9B /* libPods-BFSDemoOfAMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BFSDemoOfAMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C5DDB71C6291829604B689 /* Pods-BFSDemoOfAMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BFSDemoOfAMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-BFSDemoOfAMap/Pods-BFSDemoOfAMap.release.xcconfig"; sourceTree = "<group>"; };
 		E081A60621EA4DEF0000A475 /* BFSDemoOfAMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFSDemoOfAMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E081A60A21EA4DEF0000A475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E081A60C21EA4DEF0000A475 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +31,8 @@
 		E081A61521EA4DEF0000A475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E081A61821EA4DEF0000A475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E081A61A21EA4DEF0000A475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E085E85821EAE2780076B332 /* BFSAppAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFSAppAssistant.h; sourceTree = "<group>"; };
+		E085E85921EAE2780076B332 /* BFSAppAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFSAppAssistant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B0BD2595266F72B58621050 /* libPods-BFSDemoOfAMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D37BC44A120A8B921C74F6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39335D0742171FA2224FBB7E /* Pods-BFSDemoOfAMap.debug.xcconfig */,
+				D2C5DDB71C6291829604B689 /* Pods-BFSDemoOfAMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7EEA87DB6773B8CF6678B44A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9BF576EF3B73ABEE829BE9B /* libPods-BFSDemoOfAMap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E081A5FD21EA4DEE0000A475 = {
 			isa = PBXGroup;
 			children = (
 				E081A60821EA4DEF0000A475 /* BFSDemoOfAMap */,
 				E081A60721EA4DEF0000A475 /* Products */,
+				5D37BC44A120A8B921C74F6B /* Pods */,
+				7EEA87DB6773B8CF6678B44A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +94,8 @@
 				E081A61721EA4DEF0000A475 /* LaunchScreen.storyboard */,
 				E081A61A21EA4DEF0000A475 /* Info.plist */,
 				E081A60921EA4DEF0000A475 /* Supporting Files */,
+				E085E85821EAE2780076B332 /* BFSAppAssistant.h */,
+				E085E85921EAE2780076B332 /* BFSAppAssistant.m */,
 			);
 			path = BFSDemoOfAMap;
 			sourceTree = "<group>";
@@ -86,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E081A61D21EA4DEF0000A475 /* Build configuration list for PBXNativeTarget "BFSDemoOfAMap" */;
 			buildPhases = (
+				0DF513E76DE917AC89A05FCF /* [CP] Check Pods Manifest.lock */,
 				E081A60221EA4DEF0000A475 /* Sources */,
 				E081A60321EA4DEF0000A475 /* Frameworks */,
 				E081A60421EA4DEF0000A475 /* Resources */,
+				D42C68C3A977EFDC249103FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +141,7 @@
 				TargetAttributes = {
 					E081A60521EA4DEF0000A475 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = N8M9ALB4QH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -145,6 +177,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DF513E76DE917AC89A05FCF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BFSDemoOfAMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D42C68C3A977EFDC249103FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BFSDemoOfAMap/Pods-BFSDemoOfAMap-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMapNavi.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFSDemoOfAMap/Pods-BFSDemoOfAMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E081A60221EA4DEF0000A475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -152,6 +229,7 @@
 			files = (
 				E081A61121EA4DEF0000A475 /* ViewController.m in Sources */,
 				E081A60E21EA4DEF0000A475 /* AppDelegate.m in Sources */,
+				E085E85A21EAE2780076B332 /* BFSAppAssistant.m in Sources */,
 				E081A60B21EA4DEF0000A475 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,9 +350,12 @@
 		};
 		E081A61E21EA4DEF0000A475 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39335D0742171FA2224FBB7E /* Pods-BFSDemoOfAMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N8M9ALB4QH;
 				INFOPLIST_FILE = BFSDemoOfAMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFSDemoOfAMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,9 +364,12 @@
 		};
 		E081A61F21EA4DEF0000A475 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2C5DDB71C6291829604B689 /* Pods-BFSDemoOfAMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N8M9ALB4QH;
 				INFOPLIST_FILE = BFSDemoOfAMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bf.BFSDemoOfAMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -311,6 +395,7 @@
 				E081A61F21EA4DEF0000A475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
